@@ -21,7 +21,8 @@
 
 <body>
     <div class="container py-4">
-        We did it!
+        <h1>Welcome, you've been logged in {{success_data.user_name}}</h1>
+        <a href="/logout">Logout</a>
     </div>
     <div class="container mt-4">
         {% with messages = get_flashed_messages() %}
